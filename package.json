@@ -1,0 +1,31 @@
+{
+  "name": "customer-success-balancing-customized",
+  "version": "1.0.0",
+  "main": "src/customer-success-balancing.js",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "clean": "rm -rf dist && rm -rf coverage",
+    "build": "yarn clean && tsc -p .",
+    "lint": "eslint --ext .ts,.js src",
+    "test": "jest test/",
+    "test:coverage": "jest test/ --coverage --silent --runInBand"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jest": "^29.5.1",
+    "@typescript-eslint/eslint-plugin": "^5.59.1",
+    "@typescript-eslint/parser": "^5.59.1",
+    "eslint": "^8.39.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-jest": "^27.2.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "jest": "^29.5.0",
+    "jest-babel": "^1.0.1",
+    "jest-config": "^29.5.0",
+    "prettier": "^2.8.8",
+    "ts-jest": "^29.1.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  }
+}
